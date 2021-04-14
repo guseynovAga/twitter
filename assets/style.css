@@ -95,7 +95,7 @@ background-color:rgb(58, 86, 163)!important;
    text-decoration-line: underline;
     }
    #LOGO{
-    max-width: 300px;
+    width: 300px;
 
    }
 
@@ -106,7 +106,7 @@ background-color:rgb(58, 86, 163)!important;
      
       }
       .right{
-          
+
       }
     
     .container{
