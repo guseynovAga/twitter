@@ -5,16 +5,17 @@ body,html {
 
 }
 .container{
-    height: 94%;
+    height: 93%;
     display: flex;
     width: 100%;
 
 }
 #left{
     width: 55%;
-    
+    display:flex ;
+    justify-content: center;
 box-sizing: border-box;
-background-image: url(./images/WhatsApp\ Image\ 2021-04-14\ at\ 14.27.33.jpeg) ;
+background-image: url(./images/WhatsApp\ Image\ 2021-04-14\ at\ 15.06.34.jpeg) ;
 background-repeat: no-repeat;
 background-size: cover;}
 
@@ -55,23 +56,62 @@ button{
     margin-left: 25px;
     margin-bottom:20px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 
 footer{
-    height:6%;
+   height:7%;
+  
     width:100%;
     text-align: center;
-    padding:14px;
-    box-sizing: border-box;
+  padding-top:5px;
+ 
+
+
 }
-a{
-    font-size: 13px;
+
+a, .inc{
+    font-size: 14px;
     color: rgb(126, 123, 123);
     text-decoration: none;
-    margin: 6px;
-    font-family: Arial, Helvetica, sans-serif;}
+    margin-right: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top:5px;
+    cursor: pointer;
+}
 
-    .btn1:hover{
-        backround-color:rgb(17, 52, 168);
+.btn1:hover{
+background-color:rgb(58, 86, 163)!important;
+
+
+}
+.btn2:hover{
+    background-color:rgb(211, 221, 248)!important;
+
+}
+  a:hover{
+   text-decoration-line: underline;
     }
+   #LOGO{
+    max-width: 300px;
+
+   }
+
+   @media only screen and (max-width:800px) {
+      #left{
+         
+          width:100%;
+     
+      }
+      .right{
+          
+      }
+    
+    .container{
+           display:flex;
+           flex-direction: column-reverse; 
+           width: 100%;
+       }
+   }
