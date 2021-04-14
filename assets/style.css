@@ -1,11 +1,11 @@
 body,html {
-    height: 100%;
+    height: 100vh;
     width: 100%;
   
 
 }
 .container{
-    height: 93%;
+ height: 100vh;
     display: flex;
     width: 100%;
 
@@ -19,30 +19,31 @@ background-image: url(./images/WhatsApp\ Image\ 2021-04-14\ at\ 15.06.34.jpeg) ;
 background-repeat: no-repeat;
 background-size: cover;}
 
+
+
 .right {
     width: 45%;
-   
+    display:flex;
+    justify-self: center;
     box-sizing: border-box;
 }
 
-button{
-    display:block;
-}
+
  #logo{
-     margin-top: 75px;
-     margin-left: 25px;
+     margin-top:10%;
+     margin-left: 5%;
  }
  h1{
     font-family: 'Work Sans', sans-serif;
     font-size:70px;
-    margin-left: 25px;
-    margin-top: 70px;
+    margin-top:10%;
+     margin-left: 5%;
  }
  h2{
     font-family: 'Work Sans', sans-serif;
     font-size:35px;
-    margin-left: 25px;
-    margin-top: 75px;
+    margin-top:10%;
+     margin-left: 5%;
     font-weight: 700;
     margin-bottom: 40px;
  }
@@ -51,17 +52,18 @@ button{
     text-align: center;
     line-height: 1px;
     padding: 20px;
-    width: 410px;
-    height: 45px; 
-    margin-left: 25px;
-    margin-bottom:20px;
+    width: 400px;
+    height: 48px; 
+    margin-bottom:5%;
+     margin-left: 5%;
+     display:block;
     font-weight: 700;
     cursor: pointer;
 }
 
 
 footer{
-   height:7%;
+   height:3vh;
   
     width:100%;
     text-align: center;
@@ -79,6 +81,9 @@ a, .inc{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     margin-top:5px;
+   
+}
+a{
     cursor: pointer;
 }
 
@@ -99,19 +104,74 @@ background-color:rgb(58, 86, 163)!important;
 
    }
 
-   @media only screen and (max-width:800px) {
-      #left{
+   @media only screen and (max-width:980px) {
+      #left , .right {
          
           width:100%;
      
       }
-      .right{
-
-      }
     
+      .inner{
+   margin: 0px auto;
+    }
+  .buttons{
+      display: flex;
+
+  }
+  button{
+      max-width: 250px !important;
+      margin-left: 4%;
+  }
+      
     .container{
            display:flex;
            flex-direction: column-reverse; 
            width: 100%;
+           padding-top: 3%;
        }
    }
+
+   
+   @media only screen and (max-width:500px) {
+    #left , .right {
+       
+        width:100%;
+   
+    }
+  
+    .inner{
+ margin: 0px auto;
+  }
+  
+.buttons{
+   display: flex;
+   flex-direction: column;
+}
+button{
+    width: 250px;
+    
+    display: block;
+}
+
+    h1{
+        font-family: 'Work Sans', sans-serif;
+        font-size:40px;
+        margin-top:10%;
+         margin-left: 5%;
+         font-weight: 500;
+     }
+     h2{
+        font-family: 'Work Sans', sans-serif;
+        font-size:25px;
+        margin-top:10%;
+         margin-left: 5%;
+        font-weight: 700;
+        margin-bottom: 5%;
+     }
+    
+  .container{
+         display:flex;
+         flex-direction: column-reverse; 
+         width: 100%;
+     }
+ }
