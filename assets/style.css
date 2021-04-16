@@ -63,7 +63,7 @@ button{
 
 
 footer{
-   height:3vh;
+   height:4vh;
   
     width:100%;
     text-align: center;
@@ -110,6 +110,12 @@ background-color:rgb(58, 86, 163)!important;
           width:100%;
      
       }
+      .right{
+       height: 80vh;
+      }
+      #left{
+          height: 40vh;
+      }
     
       .inner{
    margin: 0px auto;
@@ -127,8 +133,10 @@ background-color:rgb(58, 86, 163)!important;
            display:flex;
            flex-direction: column-reverse; 
            width: 100%;
-           padding-top: 3%;
+           
+           height: 120vh;
        }
+       
    }
 
    
@@ -138,7 +146,8 @@ background-color:rgb(58, 86, 163)!important;
         width:100%;
    
     }
-  
+    #left{height: 40vh;}
+  .right{height: 60vh;}
     .inner{
  margin: 0px auto;
   }
@@ -173,5 +182,7 @@ button{
          display:flex;
          flex-direction: column-reverse; 
          width: 100%;
+         height: 100vh;
+         
      }
  }
